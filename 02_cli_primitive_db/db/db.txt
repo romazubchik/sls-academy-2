@@ -1,0 +1,1 @@
+[{"name":"Roma","gender":"male","age":"55"},{"name":"Lera","gender":"female","age":"21"},{"name":"Anton","gender":"male","age":"32"},{"name":"John","gender":"intersex","age":"43"},{"name":"Tolik","gender":"male","age":"22"},{"name":"Oleg","gender":"intersex","age":"40"},{"name":"Rita","gender":"female","age":"26"}]

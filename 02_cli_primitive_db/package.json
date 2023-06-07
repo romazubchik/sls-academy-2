@@ -1,0 +1,12 @@
+{
+  "name": "02_cli_primitive_db",
+  "version": "1.0.0",
+  "description": "",
+  "exports": "./app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roma Zubchyk <romazubchyk@gmail.com>",
+  "license": "ISC",
+  "type": "module"
+}
