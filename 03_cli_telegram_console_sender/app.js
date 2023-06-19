@@ -3,7 +3,6 @@ import { Command } from "commander";
 
 const program = new Command();
 const TOKEN = process.env.My_Token_NotesBot; //6018134348:AAEzE9lSWfMtu5482FQJ-Vo7HyAd_F9zk74  :)
-const chat_id = process.env.chat_id_NotesBot; //427361077  :)
 
 const bot = new TelegramBot(TOKEN, { polling: true });
 
@@ -14,7 +13,8 @@ program
   .argument("message", "Message to send")
   .action(async (message) => {
     try {
-      await bot.sendMessage(chat_id, message);
+      const chatId = msg.message.chat.id;
+      await bot.sendMessage(chatId, message);
       console.log("Message sent");
       process.exit();
     }
@@ -31,7 +31,8 @@ program
   .argument("path", "Path to photo")
   .action(async (path) => {
     try {
-      await bot.sendPhoto(chat_id, path);
+      const chatId = msg.message.chat.id;
+      await bot.sendPhoto(chatId, path);
       console.log("Photo sent");
       process.exit();
     }

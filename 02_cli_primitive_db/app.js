@@ -50,7 +50,7 @@ function addUser() {
                             .prompt([
                                 {
                                     type: 'input',
-                                    message: 'Enter username you want to find in DB (To see all users, enter "all"): ',
+                                    message: 'Enter name you want to find in DB (To see all users, enter "all"): ',
                                     name: 'search',
                                 },
                             ])
